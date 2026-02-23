@@ -1,8 +1,6 @@
-console.log("Hello World! This is my first Node.js app!");
-
 const fs = require('fs');
 
-fs.readFile('file.txt', 'utf8', function (err, data) {
+fs.writeFile('file.txt', 'Hello World!', function (err) {
     if (err) throw err;
-    console.log(data);
+    console.log('File saved!');
 });
